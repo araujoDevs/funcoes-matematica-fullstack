@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Funções Matemáticas</title>
+    <link rel="stylesheet" href="/assets/style.css" />
+</head>
+<body>
+    <div class="calculator-container">
+        <h1>Funções Matemáticas</h1>
+
+        <section class="section">
+            <h2>Operações Básicas</h2>
+            <div class="inputs">
+                <label for="n1">Número 1:</label>
+                <input type="number" id="n1" placeholder="Número 1" title="Digite o primeiro número" />
+                <label for="n2">Número 2:</label>
+                <input type="number" id="n2" placeholder="Número 2" title="Digite o segundo número" />
+                <label for="resultado">Resultado:</label>
+                <input type="text" id="resultado" placeholder="Resultado" readonly title="Resultado da operação" />
+            </div>
+            <div class="buttons-row">
+                <button onclick="somar()">Somar</button>
+                <button onclick="subtrair()">Subtrair</button>
+                <button onclick="multiplicar()">Multiplicar</button>
+                <button onclick="dividir()">Dividir</button>
+                <button onclick="clearBasicInputs()">Resetar</button>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2>Outras Funções</h2>
+            <div class="buttons-grid">
+                <button onclick="calcularResto()">Calcular Resto</button>
+                <button onclick="calcularPotencia()">Calcular Potência</button>
+                <button onclick="calcularRaizQuadrada()">Calcular Raiz Quadrada</button>
+                <button onclick="calcularMediaAritmetica()">Calcular Média Aritmética</button>
+                <button onclick="calcularMediaPonderada()">Calcular Média Ponderada</button>
+                <button onclick="calcularFatorial()">Calcular Fatorial</button>
+                <button onclick="gerarTabuada()">Gerar Tabuada</button>
+                <button onclick="verificarParImpar()">Verificar Par/Ímpar</button>
+                <button onclick="verificarMaiorMenor()">Verificar Maior/Menor</button>
+                <button onclick="calcularIMC()">Calcular IMC</button>
+                <button onclick="calcularAreaCirculo()">Área do Círculo</button>
+                <button onclick="calcularAreaRetangulo()">Área do Retângulo</button>
+                <button onclick="calcularAreaTriangulo()">Área do Triângulo</button>
+                <button onclick="calcularVolumeCilindro()">Volume do Cilindro</button>
+                <button onclick="calcularVolumeEsfera()">Volume da Esfera</button>
+                <button onclick="converterCelsiusFahrenheit()">Converter °C para °F</button>
+                <button onclick="converterFahrenheitCelsius()">Converter °F para °C</button>
+                <button onclick="calcularDesconto()">Calcular Desconto</button>
+                <button onclick="calcularJurosSimples()">Calcular Juros Simples</button>
+                <button onclick="calcularJurosCompostos()">Calcular Juros Compostos</button>
+                <button onclick="calcularValorFuturo()">Calcular Valor Futuro</button>
+                <button onclick="calcularValorPresente()">Calcular Valor Presente</button>
+                <button onclick="calcularTaxaCrescimento()">Calcular Taxa de Crescimento</button>
+                <button onclick="calcularDistanciaPontos()">Calcular Distância entre Pontos</button>
+                <button onclick="calcularAreaQuadrado()">Área do Quadrado</button>
+                <button onclick="calcularAreaLosango()">Área do Losango</button>
+                <button onclick="calcularAreaTrapezio()">Área do Trapézio</button>
+                <button onclick="calcularVolumeCubo()">Volume do Cubo</button>
+                <button onclick="calcularVolumeCone()">Volume do Cone</button>
+                <button onclick="calcularVolumePiramide()">Volume da Pirâmide</button>
+                <button onclick="calcularVelocidadeMedia()">Calcular Velocidade Média</button>
+                <button onclick="calcularTempoViagem()">Calcular Tempo de Viagem</button>
+                <button onclick="calcularConsumoCombustivel()">Calcular Consumo de Combustível</button>
+                <button onclick="converterMetrosParaCentimetros()">Converter Metros para Centímetros</button>
+                <button onclick="converterCentimetrosParaMetros()">Converter Centímetros para Metros</button>
+                <button onclick="converterQuilometrosParaMetros()">Converter Quilômetros para Metros</button>
+                <button onclick="converterMetrosParaQuilometros()">Converter Metros para Quilômetros</button>
+                <button onclick="calcularAreaParalelepipedo()">Área do Paralelepípedo</button>
+                <button onclick="calcularVolumeParalelepipedo()">Volume do Paralelepípedo</button>
+                <button onclick="calcularHipotenusa()">Calcular Hipotenusa</button>
+                <button onclick="calcularAreaCircunferencia()">Área da Circunferência</button>
+                <button onclick="calcularComprimentoCircunferencia()">Comprimento da Circunferência</button>
+                <button onclick="calcularMediaGeometrica()">Calcular Média Geométrica</button>
+                <button onclick="calcularMediaHarmonica()">Calcular Média Harmônica</button>
+                <button onclick="calcularDesvioPadrao()">Calcular Desvio Padrão</button>
+                <button onclick="calcularFibonacci()">Calcular Fibonacci</button>
+                <button onclick="verificarNumeroPrimo()">Verificar Número Primo</button>
+                <button onclick="converterDecimalParaBinario()">Converter Decimal para Binário</button>
+                <button onclick="converterBinarioParaDecimal()">Converter Binário para Decimal</button>
+                <button onclick="converterDecimalParaHexadecimal()">Converter Decimal para Hexadecimal</button>
+                <button onclick="converterHexadecimalParaDecimal()">Converter Hexadecimal para Decimal</button>
+                <button onclick="calcularAreaEsfera()">Área da Esfera</button>
+                <button onclick="calcularCircunferencia()">Calcular Circunferência</button>
+                <button onclick="calcularVolumeTetraedro()">Volume do Tetraedro</button>
+                <button onclick="calcularAreaTetraedro()">Área do Tetraedro</button>
+                <button onclick="calcularVolumeToroide()">Volume do Toroide</button>
+                <button onclick="calcularAreaToroide()">Área do Toroide</button>
+                <button onclick="calcularVolumeElipsoide()">Volume do Elipsoide</button>
+                <button onclick="calcularAreaElipsoide()">Área do Elipsoide</button>
+                <button onclick="calcularVolumePrisma()">Volume do Prisma</button>
+                <button onclick="calcularAreaPrisma()">Área do Prisma</button>
+                <button onclick="calcularVolumeCuneo()">Volume do Cuneo</button>
+                <button onclick="calcularAreaCuneo()">Área do Cuneo</button>
+                <button onclick="calcularVolumeHexaedro()">Volume do Hexaedro</button>
+                <button onclick="calcularAreaHexaedro()">Área do Hexaedro</button>
+                <button onclick="calcularVolumeOctaedro()">Volume do Octaedro</button>
+                <button onclick="calcularAreaOctaedro()">Área do Octaedro</button>
+                <button onclick="calcularVolumeDodecaedro()">Volume do Dodecaedro</button>
+                <button onclick="calcularAreaDodecaedro()">Área do Dodecaedro</button>
+                <button onclick="calcularVolumeIcosaedro()">Volume do Icosaedro</button>
+                <button onclick="calcularAreaIcosaedro()">Área do Icosaedro</button>
+                <button onclick="calcularVolumePrismaHexagonal()">Volume do Prisma Hexagonal</button>
+                <button onclick="calcularAreaPrismaHexagonal()">Área do Prisma Hexagonal</button>
+                <button onclick="calcularVolumeCilindroOco()">Volume do Cilindro Oco</button>
+                <button onclick="calcularAreaCilindroOco()">Área do Cilindro Oco</button>
+                <button onclick="calcularVolumeHiperboloide()">Volume do Hiperboloide</button>
+                <button onclick="calcularAreaHiperboloide()">Área do Hiperboloide</button>
+                <button onclick="calcularSeno()">Calcular Seno</button>
+                <button onclick="calcularCosseno()">Calcular Cosseno</button>
+                <button onclick="calcularTangente()">Calcular Tangente</button>
+                <button onclick="calcularMediaMovel()">Calcular Média Móvel</button>
+                <button onclick="clearOutput()">Resetar</button>
+            </div>
+        </section>
+
+        <section class="section output-area">
+            <h3>Resultado das Outras Funções:</h3>
+            <label for="output">Resultado das Outras Funções:</label>
+            <textarea id="output" rows="10" cols="80" readonly title="Resultados das operações" placeholder="Os resultados serão exibidos aqui"></textarea>
+        </section>
+    </div>
+
+    <script src="/assets/funcoes.js"></script>
+</body>
+</html>
